@@ -1,0 +1,13 @@
+language: java
+dist: focal
+
+before_install:
+  - sudo apt update
+  - sudo apt install -y git-lfs
+  - git lfs install
+  - sudo apt install -y openjdk-11-jdk
+
+script:
+  - git lfs --version
+  - java -version
+  - # Your additional build commands here
